@@ -34,6 +34,7 @@
 			this.buttonStop = new System.Windows.Forms.Button();
 			this.labelInfo = new System.Windows.Forms.Label();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
+			this.process = new System.Diagnostics.Process();
 			this.SuspendLayout();
 			// 
 			// richTextBox1
@@ -76,7 +77,20 @@
 			// 
 			// timer1
 			// 
+			this.timer1.Interval = 500;
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+			// 
+			// process
+			// 
+			this.process.StartInfo.Domain = "";
+			this.process.StartInfo.LoadUserProfile = false;
+			this.process.StartInfo.Password = null;
+			this.process.StartInfo.StandardErrorEncoding = null;
+			this.process.StartInfo.StandardOutputEncoding = null;
+			this.process.StartInfo.UserName = "";
+			this.process.SynchronizingObject = this;
+			this.process.EnableRaisingEvents = true;
+			this.process.Exited += new System.EventHandler(this.process_Exited);
 			// 
 			// MainForm
 			// 
@@ -102,6 +116,7 @@
 		private System.Windows.Forms.Button buttonStop;
 		private System.Windows.Forms.Label labelInfo;
 		private System.Windows.Forms.Timer timer1;
+		private System.Diagnostics.Process process;
 	}
 }
 
