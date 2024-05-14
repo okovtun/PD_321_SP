@@ -23,8 +23,13 @@ namespace ProcessesList
 		private void buttonStart_Click(object sender, EventArgs e)
 		{
 			proc_list.Add(new Process());
-			proc_list.First().StartInfo = new ProcessStartInfo(comboBox1.Text);
-			proc_list.First().Start();
+			proc_list.Last().StartInfo = new ProcessStartInfo(comboBox1.Text);
+			proc_list.Last().Start();
+			string item = proc_list.Last().ProcessName;
+			item += $"(PID:{proc_list.Last().Id})";
+			comboBox1.Items.Add(item);
 		}
+
+		
 	}
 }

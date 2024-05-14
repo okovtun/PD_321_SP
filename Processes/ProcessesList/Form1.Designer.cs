@@ -31,6 +31,7 @@
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.buttonStart = new System.Windows.Forms.Button();
 			this.buttonStop = new System.Windows.Forms.Button();
+			this.labelInfo = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// comboBox1
@@ -60,17 +61,28 @@
 			this.buttonStop.Text = "Stop";
 			this.buttonStop.UseVisualStyleBackColor = true;
 			// 
+			// labelInfo
+			// 
+			this.labelInfo.AutoSize = true;
+			this.labelInfo.Location = new System.Drawing.Point(13, 71);
+			this.labelInfo.Name = "labelInfo";
+			this.labelInfo.Size = new System.Drawing.Size(35, 13);
+			this.labelInfo.TabIndex = 3;
+			this.labelInfo.Text = "label1";
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(328, 371);
+			this.Controls.Add(this.labelInfo);
 			this.Controls.Add(this.buttonStop);
 			this.Controls.Add(this.buttonStart);
 			this.Controls.Add(this.comboBox1);
 			this.Name = "MainForm";
 			this.Text = "Process list";
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
@@ -79,6 +91,7 @@
 		private System.Windows.Forms.ComboBox comboBox1;
 		private System.Windows.Forms.Button buttonStart;
 		private System.Windows.Forms.Button buttonStop;
+		private System.Windows.Forms.Label labelInfo;
 	}
 }
 
