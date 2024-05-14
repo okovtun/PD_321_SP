@@ -97,9 +97,9 @@ namespace Processes
 		}
 		private int GetCpuTime()
 		{
-			int time;
+			int time=0;
 			TimeSpan userTime = process.UserProcessorTime + process.PrivilegedProcessorTime;
-			System
+			//System
 			//TimeSpan systemTime = 
 			return time;
 		}

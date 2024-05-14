@@ -1,6 +1,8 @@
 https://github.com/okovtun/PD_321_SP
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIP1SSzk8jj0fkal0XB05whX
 
+https://empyreal96.github.io/nt-info-depot/Windows-Internals-PDFs/Windows%20System%20Internals%207e%20Part%201.pdf
+
 TODO:
 1. Определить загрузку CPU для активного процесса;
 2. Получить имя пользователя, от которого запущен процесс;	DONE

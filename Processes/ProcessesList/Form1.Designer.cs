@@ -28,10 +28,12 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.buttonStart = new System.Windows.Forms.Button();
 			this.buttonStop = new System.Windows.Forms.Button();
 			this.labelInfo = new System.Windows.Forms.Label();
+			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.SuspendLayout();
 			// 
 			// comboBox1
@@ -70,6 +72,11 @@
 			this.labelInfo.TabIndex = 3;
 			this.labelInfo.Text = "label1";
 			// 
+			// timer1
+			// 
+			this.timer1.Enabled = true;
+			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -81,17 +88,25 @@
 			this.Controls.Add(this.comboBox1);
 			this.Name = "MainForm";
 			this.Text = "Process list";
+			this.TopMost = true;
 			this.ResumeLayout(false);
 			this.PerformLayout();
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_Closing);
 
+			////////////////////////////////////
+			///
+			proc_close_handler = new System.EventHandler(this.process_Exited);
 		}
 
 		#endregion
+
+		System.EventHandler proc_close_handler;
 
 		private System.Windows.Forms.ComboBox comboBox1;
 		private System.Windows.Forms.Button buttonStart;
 		private System.Windows.Forms.Button buttonStop;
 		private System.Windows.Forms.Label labelInfo;
+		private System.Windows.Forms.Timer timer1;
 	}
 }
 
