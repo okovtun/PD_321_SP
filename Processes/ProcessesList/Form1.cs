@@ -108,5 +108,8 @@ namespace ProcessesList
 		[DllImport("kernel32.dll", SetLastError = true)]
 		[return: MarshalAs(UnmanagedType.Bool)]
 		private static extern bool CloseHandle(IntPtr handle);
+		[DllImport("user32.dll")]
+		public static extern IntPtr SendMessage(IntPtr hwnd, uint uMsg,
+			IntPtr wParam, [MarshalAs(UnmanagedType.LPStr)]string lParam);
 	}
 }
