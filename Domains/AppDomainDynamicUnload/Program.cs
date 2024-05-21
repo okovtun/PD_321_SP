@@ -10,6 +10,7 @@ namespace AppDomainDynamicUnload
 {
 	class Program
 	{
+		[LoaderOptimization(LoaderOptimization.SingleDomain)]
 		static void Main(string[] args)
 		{
 			Console.WriteLine(Directory.GetCurrentDirectory());
@@ -32,6 +33,16 @@ namespace AppDomainDynamicUnload
 			method.Invoke(null, null);
 
 			AppDomain.Unload(domain);
+			//JIT - Just In Time code
+			//LoadFrom
+			//Domain-neutral
+			//LoaderOptimisationAttribute
+
+			//SingleDomain (MScoreLib)
+			//MultiDomain - загружает все сборки нейтрально
+			//MultiDomainHost 
+
+			//GetDomain (Thread)
 		}
 	}
 }

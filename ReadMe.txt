@@ -6,6 +6,10 @@ https://empyreal96.github.io/nt-info-depot/Windows-Internals-PDFs/Windows%20Syst
 TODO:
 Написать диспетчер задач;
 
+TODO:
+1. CLR via C# Chapter 22: CLR hosting and AppDomains;
+2. При запуске 'UsingAppDomains' необходимые исполняемые файлы сами должны копироваться в нужную папку;
+
 DONE:
 1. Дописать обработчик кнопки 'Stop';	DONE
 2. Вынести перемещение процесса между ListBox-ами в отдельную функцию;
