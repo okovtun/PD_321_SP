@@ -13,7 +13,7 @@ namespace TextWindow
 {
 	public partial class MainForm : Form
 	{
-		Module drawerModule;
+		Module drawerModule { get; set; }
 		object drawer;
 		public MainForm()
 		{
@@ -26,13 +26,11 @@ namespace TextWindow
 		}
 		private void textBox_TextChanged(object sender, EventArgs e)
 		{
-			drawerModule.GetType("TextDrawer.MainForm").GetMethod("SetText");
-			Invoke((drawer as Delegate), new object[] { textBox.Text });
+			drawerModule.GetType("TextDrawer.MainForm").GetMethod("SetText").Invoke(drawer, new object[] { textBox.Text });
 		}
 		private void MainForm_LocationChanged(object sender, EventArgs e)
 		{
-			drawerModule.GetType("TextDrawer.MainForm").GetMethod("Move");
-			Invoke((drawer as Delegate), new object[] { new Point(this.Location.X, this.Location.Y + this.Height), this.Width });
+			drawerModule.GetType("TextDrawer.MainForm").GetMethod("Move").Invoke(drawer, new object[] { new Point(this.Location.X, this.Location.Y + this.Height), this.Width });
 		}
 	}
 }
