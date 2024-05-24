@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Processes", "Processes\Proc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessesList", "ProcessesList\ProcessesList.csproj", "{D633BF87-04E2-4730-B0DE-B96766714727}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager", "TaskManager\TaskManager.csproj", "{C208AEA8-A9D8-42CB-BC64-F3C708C0E6C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D633BF87-04E2-4730-B0DE-B96766714727}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D633BF87-04E2-4730-B0DE-B96766714727}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D633BF87-04E2-4730-B0DE-B96766714727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C208AEA8-A9D8-42CB-BC64-F3C708C0E6C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C208AEA8-A9D8-42CB-BC64-F3C708C0E6C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C208AEA8-A9D8-42CB-BC64-F3C708C0E6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C208AEA8-A9D8-42CB-BC64-F3C708C0E6C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

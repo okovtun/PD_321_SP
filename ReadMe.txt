@@ -4,7 +4,12 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIP1SSzk8jj0fkal0XB05whX
 https://empyreal96.github.io/nt-info-depot/Windows-Internals-PDFs/Windows%20System%20Internals%207e%20Part%201.pdf
 
 TODO:
-Написать диспетчер задач;
+Написать диспетчер задач:
+1. Обеспечить плавное обновление listViewProcesses;
+2. Загрузить иконки для каждого процесса;
+3. Добавить путь к файлу каждого процесса;
+4. Сдлать сортировку по разным полям listViewProcesses;
+5. Обеспечить добавление/уделение отдельных столбиков ListView;
 
 TODO:
 1. CLR via C# Chapter 22: CLR hosting and AppDomains;
