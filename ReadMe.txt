@@ -6,10 +6,14 @@ https://empyreal96.github.io/nt-info-depot/Windows-Internals-PDFs/Windows%20Syst
 TODO:
 Написать диспетчер задач:
 1. Обеспечить плавное обновление listViewProcesses;
+	- Добить метод AddNewProcesses();
+	- Написать метод UpdateExistingProcesses();
 2. Загрузить иконки для каждого процесса;
 3. Добавить путь к файлу каждого процесса;
 4. Сдлать сортировку по разным полям listViewProcesses;
 5. Обеспечить добавление/уделение отдельных столбиков ListView;
+
+https://github.com/Zachary-Rude/task-manager
 
 TODO:
 1. CLR via C# Chapter 22: CLR hosting and AppDomains;
