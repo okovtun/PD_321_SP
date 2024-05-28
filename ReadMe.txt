@@ -5,7 +5,7 @@ https://empyreal96.github.io/nt-info-depot/Windows-Internals-PDFs/Windows%20Syst
 
 TODO:
 Написать диспетчер задач:
-1. Обеспечить плавное обновление listViewProcesses;
+1. Обеспечить плавное обновление listViewProcesses;	DONE
 	- Добить метод AddNewProcesses();
 	- Написать метод UpdateExistingProcesses();
 2. Загрузить иконки для каждого процесса;

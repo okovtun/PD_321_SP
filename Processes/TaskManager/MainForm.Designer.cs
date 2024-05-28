@@ -31,17 +31,17 @@
 			this.components = new System.ComponentModel.Container();
 			this.tabControl = new System.Windows.Forms.TabControl();
 			this.tabPageProcesses = new System.Windows.Forms.TabPage();
+			this.statusStrip = new System.Windows.Forms.StatusStrip();
+			this.toolStripStatusLabelProcesses = new System.Windows.Forms.ToolStripStatusLabel();
 			this.listViewProcesses = new System.Windows.Forms.ListView();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.timer = new System.Windows.Forms.Timer(this.components);
-			this.statusStrip = new System.Windows.Forms.StatusStrip();
-			this.toolStripStatusLabelProcesses = new System.Windows.Forms.ToolStripStatusLabel();
 			this.tabControl.SuspendLayout();
 			this.tabPageProcesses.SuspendLayout();
-			this.menuStrip1.SuspendLayout();
 			this.statusStrip.SuspendLayout();
+			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// tabControl
@@ -67,14 +67,33 @@
 			this.tabPageProcesses.Text = "Processes";
 			this.tabPageProcesses.UseVisualStyleBackColor = true;
 			// 
+			// statusStrip
+			// 
+			this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabelProcesses});
+			this.statusStrip.Location = new System.Drawing.Point(3, 375);
+			this.statusStrip.Name = "statusStrip";
+			this.statusStrip.Size = new System.Drawing.Size(786, 22);
+			this.statusStrip.TabIndex = 1;
+			this.statusStrip.Text = "statusStrip1";
+			// 
+			// toolStripStatusLabelProcesses
+			// 
+			this.toolStripStatusLabelProcesses.Name = "toolStripStatusLabelProcesses";
+			this.toolStripStatusLabelProcesses.Size = new System.Drawing.Size(118, 17);
+			this.toolStripStatusLabelProcesses.Text = "toolStripStatusLabel1";
+			// 
 			// listViewProcesses
 			// 
-			this.listViewProcesses.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.listViewProcesses.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.listViewProcesses.FullRowSelect = true;
+			this.listViewProcesses.GridLines = true;
 			this.listViewProcesses.HideSelection = false;
 			this.listViewProcesses.Location = new System.Drawing.Point(3, 3);
 			this.listViewProcesses.Name = "listViewProcesses";
-			this.listViewProcesses.Size = new System.Drawing.Size(786, 394);
+			this.listViewProcesses.Size = new System.Drawing.Size(786, 369);
 			this.listViewProcesses.TabIndex = 0;
 			this.listViewProcesses.UseCompatibleStateImageBehavior = false;
 			this.listViewProcesses.View = System.Windows.Forms.View.Details;
@@ -111,22 +130,6 @@
 			this.timer.Interval = 1000;
 			this.timer.Tick += new System.EventHandler(this.timer_Tick);
 			// 
-			// statusStrip
-			// 
-			this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabelProcesses});
-			this.statusStrip.Location = new System.Drawing.Point(3, 375);
-			this.statusStrip.Name = "statusStrip";
-			this.statusStrip.Size = new System.Drawing.Size(786, 22);
-			this.statusStrip.TabIndex = 1;
-			this.statusStrip.Text = "statusStrip1";
-			// 
-			// toolStripStatusLabelProcesses
-			// 
-			this.toolStripStatusLabelProcesses.Name = "toolStripStatusLabelProcesses";
-			this.toolStripStatusLabelProcesses.Size = new System.Drawing.Size(118, 17);
-			this.toolStripStatusLabelProcesses.Text = "toolStripStatusLabel1";
-			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -139,10 +142,10 @@
 			this.tabControl.ResumeLayout(false);
 			this.tabPageProcesses.ResumeLayout(false);
 			this.tabPageProcesses.PerformLayout();
-			this.menuStrip1.ResumeLayout(false);
-			this.menuStrip1.PerformLayout();
 			this.statusStrip.ResumeLayout(false);
 			this.statusStrip.PerformLayout();
+			this.menuStrip1.ResumeLayout(false);
+			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
