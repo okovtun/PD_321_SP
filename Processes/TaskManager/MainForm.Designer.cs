@@ -91,7 +91,7 @@
 			this.listViewProcesses.FullRowSelect = true;
 			this.listViewProcesses.GridLines = true;
 			this.listViewProcesses.HideSelection = false;
-			this.listViewProcesses.Location = new System.Drawing.Point(3, 3);
+			this.listViewProcesses.Location = new System.Drawing.Point(5, 3);
 			this.listViewProcesses.Name = "listViewProcesses";
 			this.listViewProcesses.Size = new System.Drawing.Size(786, 369);
 			this.listViewProcesses.TabIndex = 0;
