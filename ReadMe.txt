@@ -8,7 +8,7 @@ TODO:
 1. Обеспечить плавное обновление listViewProcesses;
 	- Добить метод AddNewProcesses();			DONE
 	- Написать метод UpdateExistingProcesses();	DONE
-	- Double buffering;
+	- Double buffering;		DONE
 2. Загрузить иконки для каждого процесса;
 3. Добавить путь к файлу каждого процесса;
 4. Сдлать сортировку по разным полям listViewProcesses;
